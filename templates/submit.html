@@ -1,0 +1,24 @@
+{%extends "nav.html"%}
+{%block content%}
+<div class="submissions">
+    <h1>Submit</h1>
+    <p>Can't find the word you're looking for? Have a suggestion that should be included? Use the form below</p>
+
+    <div class="formsection">
+    <form action="https://formspree.io/xpzldyrk" method="POST">
+    <label>Your email:</label>
+    <input type="text" name="_replyto">
+    <label>Word to submit with definition:</label>
+    <textarea name="message"></textarea>
+  
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
+
+</div>
+
+
+</div>
+{%endblock%}

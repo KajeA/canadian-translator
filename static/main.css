@@ -1,0 +1,180 @@
+body {
+    margin: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navigation {
+    height: 5rem;
+    background-color: rgb(180, 22, 22);
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+}
+
+.navigation a {
+    margin: 0;
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1rem 1rem 1rem 1rem;
+    
+}
+.content {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(180, 22, 22);
+    font-size: 80px;
+    margin-top: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* SEARCH PAGE */
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+article {
+    height: 50rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+}
+
+
+.mlleft, .mlright {
+    height: 20rem;
+    width: 20rem;
+    padding-top: 10rem;
+    z-index: -1;
+}
+
+.mlleft {
+    transform: scaleX(-1);
+    margin-left: 3rem;
+}
+
+.mlright {
+    margin-right: 3rem;
+}
+
+
+#userword {
+    height: 2rem;
+    width: 45vw;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+::placeholder {
+    padding-left: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subbut {
+    height: 1.5rem;
+    width: 7rem;
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.ranbut {
+    height: 1.5rem;
+    width: 7rem;
+    border-radius: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.words {
+    margin-top: 2rem;
+    height: 6rem;
+    /* width: 30rem; */
+}
+
+.initialWord {
+    font-size: 24px;
+}
+
+.result {
+    font-size: 24px;
+}
+
+.about {
+    text-align: center;
+}
+
+.about h1 {
+margin-top: 3rem;
+}
+
+.aboutsection {
+    width: 50rem;
+    margin: auto;
+
+}
+
+.submissions h1 {
+    margin-top: 3rem;
+}
+
+.formsection {
+    width: 40rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem 2rem 2rem 2rem;
+    margin: auto;
+}
+
+.formsection form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.formsection label {
+    padding-top: 1rem;
+}
+
+.formsection form button {
+    width: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 0.5rem;
+    border-radius: 7px;
+    
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+    .mlleft, .mlright {
+      display: none;
+    }
+  }
+
+    .article {
+        height: 30rem;
+    }

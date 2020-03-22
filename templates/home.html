@@ -1,0 +1,30 @@
+{%extends "nav.html"%}
+{%block content%}
+
+<section class="main">
+
+<img src="/static/mapleleaf.png" class="mlleft">
+
+<article>
+ <h1>Canadian Translator</h1>
+    <form action="/" method="POST">
+        <label class="entry"></label><br>
+        <input type="text" id="userword" name="userword" placeholder="Search"><br>
+        <button type="submit" class="subbut" name="action" value="Submit">Submit</button>
+        <button type="submit" class="ranbut" name="action" value="Random">Random Word</button>
+    </form> 
+
+    {% block contenttwo %}
+    <div class="words">
+    <p class="initialWord">{{ initialword }}</p>
+    <p class="result">{{ result }}</p>
+    </div>
+    {% endblock%}
+    
+</article>
+
+<img src="/static/mapleleaf.png" class="mlright">
+
+</section>
+
+{%endblock%}
