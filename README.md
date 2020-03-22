@@ -1,5 +1,6 @@
 # canadian-translator
-Translates Canadian slang 
+Python program that translates Canadian slang
+Flask frontend
 
 
 Live: https://canadian-translator.herokuapp.com/
